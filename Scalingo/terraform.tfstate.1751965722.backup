@@ -1,30 +1,34 @@
 {
   "version": 4,
   "terraform_version": "1.12.2",
-  "serial": 96,
+  "serial": 71,
   "lineage": "a6d323fb-a526-1666-ac12-f16bdcb7f913",
   "outputs": {},
   "resources": [
     {
       "mode": "managed",
       "type": "scalingo_app",
-      "name": "monorepo",
+      "name": "react-frontend",
       "provider": "provider[\"registry.terraform.io/scalingo/scalingo\"]",
       "instances": [
         {
           "schema_version": 0,
           "attributes": {
-            "all_environment": {},
-            "base_url": "https://ton-nom-app-scaling.osc-fr1.scalingo.io",
-            "environment": {},
+            "all_environment": {
+              "BUILDPACK_URL": "https://github.com/NawfelHilal/ci_cd_react_form"
+            },
+            "base_url": "https://react-frontend.osc-fr1.scalingo.io",
+            "environment": {
+              "BUILDPACK_URL": "https://github.com/NawfelHilal/ci_cd_react_form"
+            },
             "force_https": false,
-            "git_url": "git@ssh.osc-fr1.scalingo.com:ton-nom-app-scaling.git",
-            "id": "686cef954a7a47066e5c0ff3",
-            "name": "monorepo_terraform",
+            "git_url": "git@ssh.osc-fr1.scalingo.com:react-frontend.git",
+            "id": "686cdfc9de819bead05b9129",
+            "name": "react-frontend",
             "router_logs": false,
             "stack_id": "st-7ccbf8e6-04d3-4e2c-98e3-604a4700cebc",
             "sticky_session": false,
-            "url": "https://ton-nom-app-scaling.osc-fr1.scalingo.io"
+            "url": "https://react-frontend.osc-fr1.scalingo.io"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,

@@ -1,0 +1,3 @@
+web: cd react-form && npm install && npm run build && npx serve -s build -l 8080
+api-node: cd ci-cd-back-ynov-main && npm install && npm start
+api-python: cd react-form/server && pip install -r requirements.txt && python server.py
